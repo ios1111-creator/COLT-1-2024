@@ -41,3 +41,5 @@
 5️⃣ Creating environment variables in Postman
 
 6️⃣ Run collection and testing
+
+💻 Postman installation
