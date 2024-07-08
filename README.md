@@ -2,7 +2,7 @@
 
 # 🔎 Test scope based on Trello API documentation
 
-- Tablica (Board):
+- **Tablica (Board):**
   - Stworzenie tablicy (POST Create a Board)
   - Pobranie tablicy (GET Get a Board)
   - Zaktualizowanie tablicy (PUT Update a Board)
