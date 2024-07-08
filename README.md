@@ -30,7 +30,7 @@
 
 # 🚀 Getting started:
 
-1️⃣ Postman installation
+**1️⃣ Postman installation**
 
 2️⃣ Creating a Trello account
 
