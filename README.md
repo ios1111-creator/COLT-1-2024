@@ -3,10 +3,10 @@
 # 🔎 Test scope based on Trello API documentation
 
 - Tablica (Board):
- - Stworzenie tablicy (POST Create a Board)
- - Pobranie tablicy (GET Get a Board)
- - Zaktualizowanie tablicy (PUT Update a Board)
- - Usunięcie tablicy (DEL Delete a Board)
+  - Stworzenie tablicy (POST Create a Board)
+  - Pobranie tablicy (GET Get a Board)
+  - Zaktualizowanie tablicy (PUT Update a Board)
+  - Usunięcie tablicy (DEL Delete a Board)
 - Lista (List):
  - Stworzenie listy (POST Create a new List)
  - Pobranie listy (GET Get a List)
