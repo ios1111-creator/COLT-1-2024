@@ -32,15 +32,15 @@
 
 **1️⃣ Postman installation**
 
-2️⃣ Creating a Trello account
+**2️⃣ Creating a Trello account**
 
-3️⃣ Trello authentication
+**3️⃣ Trello authentication**
 
-4️⃣ Importing a file into Postman
+**4️⃣ Importing a file into Postman**
 
-5️⃣ Creating environment variables in Postman
+**5️⃣ Creating environment variables in Postman**
 
-6️⃣ Run collection and testing
+**6️⃣ Run collection and testing**
 
 -------------------
 
