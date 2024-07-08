@@ -1,0 +1,731 @@
+{
+	"info": {
+		"_postman_id": "1c5abfa9-400b-40b8-990b-0b58852de7b6",
+		"name": "Cherry-1-2024-Trello-REST_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13626272"
+	},
+	"item": [
+		{
+			"name": "BOARD",
+			"item": [
+				{
+					"name": "Create Board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?name={Test}&key=7e40e0ff6b9b8f8bafe8278e6de8a6aa&token=ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{Test}"
+								},
+								{
+									"key": "key",
+									"value": "7e40e0ff6b9b8f8bafe8278e6de8a6aa"
+								},
+								{
+									"key": "token",
+									"value": "ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/667fdc8115b9ce69b0329da6?key=7e40e0ff6b9b8f8bafe8278e6de8a6aa&token=ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"667fdc8115b9ce69b0329da6"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "7e40e0ff6b9b8f8bafe8278e6de8a6aa"
+								},
+								{
+									"key": "token",
+									"value": "ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Board",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lists on a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/667fdc8115b9ce69b0329da6/lists?key={{API key}}&token={{Token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"667fdc8115b9ce69b0329da6",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{Token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Create List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists?name=Test&idBoard=667fdc8115b9ce69b0329da6&key=7e40e0ff6b9b8f8bafe8278e6de8a6aa&token=ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Test"
+								},
+								{
+									"key": "idBoard",
+									"value": "667fdc8115b9ce69b0329da6"
+								},
+								{
+									"key": "key",
+									"value": "7e40e0ff6b9b8f8bafe8278e6de8a6aa"
+								},
+								{
+									"key": "token",
+									"value": "ATTAda7c13f98df13a9b930ad362f42a6f2b9d4ba395f5d6a0f6ed9ec69252a3f646238CA9CC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/667fe1a98000843e9050a525?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"667fe1a98000843e9050a525"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a List",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/667fe1a98000843e9050a525?key={{API key}}&token={{Token}}&name=Test2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"667fe1a98000843e9050a525"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{API key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{Token}}"
+								},
+								{
+									"key": "name",
+									"value": "Test2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Archive a list",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/667fe1a98000843e9050a525/closed?key={{APIKey}}&token={{APIToken}}&value=false",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"667fe1a98000843e9050a525",
+								"closed"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "value",
+									"value": "false",
+									"description": "0=false,1=true (tez działa)"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CARD",
+			"item": [
+				{
+					"name": "Create a new Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?idList=667fdc8115b9ce69b0329dad&key={{APIKey}}&token={{APIToken}}&name=test card2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "667fdc8115b9ce69b0329dad"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "name",
+									"value": "test card2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/667fe6cd12341d23e347d460?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"667fe6cd12341d23e347d460"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the List of a Card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/667fe6d592452ae396d19b44/list?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"667fe6d592452ae396d19b44",
+								"list"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a new comment to a Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/667fe6d592452ae396d19b44/actions/comments?text=add_test_comment&key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"667fe6d592452ae396d19b44",
+								"actions",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "add_test_comment"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment Action on a Card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/667fe6d592452ae396d19b44/actions/668535c2a43e9367392d056f/comments?text=update_comment&key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"667fe6d592452ae396d19b44",
+								"actions",
+								"668535c2a43e9367392d056f",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "update_comment"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer of the card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/667fe6d592452ae396d19b44?key={{APIKey}}&token={{APIToken}}&idList=667fdc8115b9ce69b0329daf",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"667fe6d592452ae396d19b44"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "idList",
+									"value": "667fdc8115b9ce69b0329daf"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CHECKLIST",
+			"item": [
+				{
+					"name": "Create a Checklist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists?idCard=667fe6cd12341d23e347d460&key={{APIKey}}&token={{APIToken}}&name=Test Checklist3",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists"
+							],
+							"query": [
+								{
+									"key": "idCard",
+									"value": "667fe6cd12341d23e347d460"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "name",
+									"value": "Test Checklist3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Checklist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/66853ae11c1862388478d5b9?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"66853ae11c1862388478d5b9"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Checklist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/66853a98e0ee085cda3dd3ce?key={{APIKey}}&token={{APIToken}}&name=Update Test checkclist 1&pos=bottom",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"66853a98e0ee085cda3dd3ce"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "name",
+									"value": "Update Test checkclist 1"
+								},
+								{
+									"key": "pos",
+									"value": "bottom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update field on a Checklist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/66853ae11c1862388478d5b9/name?value=update&key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"66853ae11c1862388478d5b9",
+								"name"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "update"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Checkitem on Checklist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/66853ae11c1862388478d5b9/checkItems?name=added checkitems test 2&key={{APIKey}}&token={{APIToken}}&checked=true",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"66853ae11c1862388478d5b9",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "added checkitems test 2"
+								},
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								},
+								{
+									"key": "checked",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Delete a Checklist",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/668bf02d07e786dd3c5a0d48?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"668bf02d07e786dd3c5a0d48"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/668bf0abe673e7ed0647bf36?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"668bf0abe673e7ed0647bf36"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Board",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/668bf165b6c1673464dcef1a?key={{APIKey}}&token={{APIToken}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"668bf165b6c1673464dcef1a"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{APIKey}}"
+								},
+								{
+									"key": "token",
+									"value": "{{APIToken}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
