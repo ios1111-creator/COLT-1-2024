@@ -28,7 +28,7 @@
    - Aktualizacja pola checklisty (PUT Update field on a Checklist)
    - Usunięcie checklisty (DEL Delete a Checklist)
 
-🚀 Getting started:
+# 🚀 Getting started:
 -------------------
 1. Postman installation
 
