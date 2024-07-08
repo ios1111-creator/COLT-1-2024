@@ -7,13 +7,13 @@
   - Pobranie tablicy (GET Get a Board)
   - Zaktualizowanie tablicy (PUT Update a Board)
   - Usunięcie tablicy (DEL Delete a Board)
-- Lista (List):
+- **Lista (List):**
    - Stworzenie listy (POST Create a new List)
    - Pobranie listy (GET Get a List)
    - Pobranie tablicy, na której znajduje się lista (GET Get the Board a List is on)
    - Zaktualizowanie listy (PUT Update a List)
    - Archiwizowanie listy (PUT Archive a list)
-- Karta (Card):
+- **Karta (Card):**
    - Stworzenie karty (POST Create a new Card)
    - Pobranie karty (GET Get a Card)
    - Pobranie listy, na której znajduje się karta (GET Get the List of a Card)
@@ -21,7 +21,7 @@
    - Zaktualizowanie komentarza do karty (PUT Update Comment Action on a Card)
    - Przeniesienie karty do innej listy (PUT Update a Card)
    - Usunięcie karty (DEL Delete a Card)
-- Lista kontrolna (Checklist):
+- **Lista kontrolna (Checklist):**
    - Stworzenie checklisty (POST Create a Checklist)
    - Pobranie checklisty (GET Get a Checklist)
    - Aktualizacja checklisty (PUT Update a Checklist)
