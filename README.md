@@ -45,6 +45,6 @@
 -------------------
 
 - 💻 Postman installation
-  - 1️⃣ Go to the [Postman website] and click the orange button with name of your operating system. (https://www.postman.com/downloads/)
+  - 1️⃣ Go to the [Postman website](https://www.postman.com/downloads/) and click the orange button with name of your operating system.
   - 2️⃣ Download the installation file, then run the installer and follow the instructions that appear.
   - 3️⃣ Postman is ready to use.
