@@ -1,4 +1,4 @@
-# COLT-1-2024 project: ...
+# COLT-1-2024 project: Trello REST API testing with Postman
 
 # 🔎 Test scope based on Trello API documentation
 
