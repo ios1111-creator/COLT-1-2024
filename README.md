@@ -29,7 +29,7 @@
    - Usunięcie checklisty (DEL Delete a Checklist)
 
 # 🚀 Getting started:
--------------------
+
 1️⃣ Postman installation
 
 2️⃣ Creating a Trello account
@@ -41,5 +41,9 @@
 5️⃣ Creating environment variables in Postman
 
 6️⃣ Run collection and testing
+-------------------
 
 💻 Postman installation
+1️⃣ Go to the Postman website and click the orange button with name of your operating system.
+2️⃣ Download the installation file, then run the installer and follow the instructions that appear.
+3️⃣ Postman is ready to use.
